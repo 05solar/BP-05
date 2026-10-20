@@ -29,7 +29,7 @@ enableRobotsTXT = true
   [params.homepage.research]
     enable = true
     layout = "cards"
-    title = "Research"
+    title = "Projects"
 
   [params.homepage.writing]
     enable = true
