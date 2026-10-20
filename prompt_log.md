@@ -50,3 +50,9 @@
 - **프롬프트**: `"C:\Users\이솔하\Downloads\hugo-celadon-main.zip" 이거를 뭐 해봐 압축 풀어서 해봐`
 - **응답/작업 요약**: ZIP을 스크래치 폴더에 풀어 내용 확인 후, `hugo-celadon-main/`의 테마 파일 전체(.github 워크플로, archetypes, assets, exampleSite, images, layouts, static, theme.toml, LICENSE.txt 등)를 BP-05 루트로 복사함. 테마의 .gitignore와 기존 .gitignore(agent.md 제외)를 병합하고 Hugo 빌드 산출물(public/, resources/, .hugo_build.lock) 제외 규칙 추가. agent.md가 여전히 ignore되는 것 확인. 테마 동봉 demo.yml 워크플로는 hugo-version 'latest'(P08 위반 소지)·baseURL이 /hugo-celadon/ 고정(P10·P16 위반)·gh-pages 브랜치 배포(과제는 Pages Source=GitHub Actions 요구) 문제가 있어 추후 수정 필요함을 확인.
 - **산출물**: 테마 파일 BP-05 루트 배치, `.gitignore` 병합 갱신
+
+## 8. (2026-10-20) 사이트 구조화·배포 워크플로·첫 push
+- **프롬프트**: `그래 진행해봐`
+- **응답/작업 요약**: (1) 테마 파일을 `themes/celadon/`으로 분리하고 exampleSite의 content·data·static·hugo.toml을 루트로 승격하는 표준 Hugo 구조로 재구성. (2) `hugo.toml`에서 themesDir 제거, baseURL을 `https://05solar.github.io/BP-05/`로, languageCode를 `ko`로, title을 `05solar Portfolio`로 변경 (P10·P16·P48). (3) 테마 demo.yml 삭제 후 공식 Pages 배포 워크플로 `.github/workflows/hugo.yml` 작성 — Hugo 0.148.2 extended 고정(P08), main push 자동 실행(P03), actions/deploy-pages 방식(P05). (4) README에 도구 버전·설치·빌드 명령·수정 파일 위치·재배포 절차·테마 라이선스 고지 작성 (P56·P57·P58). (5) winget으로 Hugo 0.148.2 extended 설치 후 로컬 빌드 성공 확인 — 33페이지 생성, `lang=ko`·`/BP-05/` 경로 정상. (6) lotus05f@gmail.com 계정으로 의미 단위 커밋 5개 생성 후 origin/main 첫 push 완료.
+- **산출물**: `themes/celadon/` 구조, `hugo.toml` 수정, `.github/workflows/hugo.yml`, `README.md`, 커밋 5개 push (2cc9cbe~dc214b1)
+- **남은 일**: GitHub 웹에서 Settings → Pages → Source를 **GitHub Actions**로 설정(수동 필요), 이후 Actions 성공 확인. 콘텐츠는 아직 테마 예시(가상 인물) 상태 — P80을 위해 본인 내용으로 교체 필요.
