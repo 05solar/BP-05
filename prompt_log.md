@@ -56,3 +56,8 @@
 - **응답/작업 요약**: (1) 테마 파일을 `themes/celadon/`으로 분리하고 exampleSite의 content·data·static·hugo.toml을 루트로 승격하는 표준 Hugo 구조로 재구성. (2) `hugo.toml`에서 themesDir 제거, baseURL을 `https://05solar.github.io/BP-05/`로, languageCode를 `ko`로, title을 `05solar Portfolio`로 변경 (P10·P16·P48). (3) 테마 demo.yml 삭제 후 공식 Pages 배포 워크플로 `.github/workflows/hugo.yml` 작성 — Hugo 0.148.2 extended 고정(P08), main push 자동 실행(P03), actions/deploy-pages 방식(P05). (4) README에 도구 버전·설치·빌드 명령·수정 파일 위치·재배포 절차·테마 라이선스 고지 작성 (P56·P57·P58). (5) winget으로 Hugo 0.148.2 extended 설치 후 로컬 빌드 성공 확인 — 33페이지 생성, `lang=ko`·`/BP-05/` 경로 정상. (6) lotus05f@gmail.com 계정으로 의미 단위 커밋 5개 생성 후 origin/main 첫 push 완료.
 - **산출물**: `themes/celadon/` 구조, `hugo.toml` 수정, `.github/workflows/hugo.yml`, `README.md`, 커밋 5개 push (2cc9cbe~dc214b1)
 - **남은 일**: GitHub 웹에서 Settings → Pages → Source를 **GitHub Actions**로 설정(수동 필요), 이후 Actions 성공 확인. 콘텐츠는 아직 테마 예시(가상 인물) 상태 — P80을 위해 본인 내용으로 교체 필요.
+
+## 9. (2026-10-20) 커밋·push 상태 확인
+- **프롬프트**: `일단 커밋하고 push 해봐 lotus05f@gmail.com 단독계정으로만 진행해`
+- **응답/작업 요약**: 작업 트리가 깨끗한 상태(미커밋 변경 없음)였고, 기존 커밋 6개 모두 `05solar <lotus05f@gmail.com>` 단독 계정으로 작성되어 origin/main에 push 완료된 것을 확인함. 이 확인 기록을 추가로 커밋·push함.
+- **산출물**: 커밋 작성자 검증, prompt_log 갱신 커밋 push
