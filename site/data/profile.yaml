@@ -1,0 +1,22 @@
+name: "이솔하"
+title: "풀스택 개발자 · leeosolha"
+summary: >
+  안녕하세요, 이솔하입니다. 전북대학교 **IT지능정보공학과**에 재학 중입니다.
+  ==풀스택 웹 개발==과 ==AI 활용 기술==에 관심을 가지고 다양한 프로젝트를 진행하고 있습니다.
+  LLM, RAG, MCP(Model Context Protocol) 기반 AI 서비스 개발 경험을 보유하고 있으며,
+  프론트엔드부터 백엔드, AI 시스템 연동까지 전반적인 개발 역량을 갖추고 있습니다.
+affiliation: "전북대학교 IT지능정보공학과 재학"
+profile_image: "images/profile.png"
+profile_layout: "classic" # Options: "modern" or "classic"
+profile_image_style: "rectangle" # Options: "circle" or "rectangle"
+
+list:
+  - "풀스택 웹 개발 (프론트엔드 · 백엔드)"
+  - "LLM · RAG · MCP 기반 AI 서비스 개발"
+  - "AI 시스템 연동과 서비스 배포"
+
+links:
+  - label: "GitHub"
+    url: "https://github.com/05solar"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/solha-lee-7a9127409/"
