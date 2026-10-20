@@ -5,9 +5,9 @@ theme = 'celadon'
 enableRobotsTXT = true
 
 [params]
-  description = 'Computational Archaeologist weaving ancient history with modern algorithms.'
-  email = 'alex@example.com'
-  location = 'Tampa, USA'
+  description = '전북대학교 IT지능정보공학과에 재학 중인 풀스택 개발자 이솔하의 개인 포트폴리오'
+  email = 'lotus05f@gmail.com'
+  location = '전북대학교'
 
 [params.homepage]
   sections = ["hero", "news", "research", "writing"]
