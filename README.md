@@ -44,7 +44,7 @@ python .github/pages_build.py --build
 
 ```bash
 cd site
-hugo server --config hugo.toml,pages.json --themesDir themes --theme template
+hugo server
 ```
 
 브라우저에서 http://localhost:1313/BP-05/ 접속.

@@ -2,6 +2,9 @@
 baseURL = 'https://05solar.github.io/BP-05/'
 languageCode = 'ko'
 title = '05solar Portfolio'
+# 로컬 미리보기(hugo server)에서도 테마가 적용되도록 지정.
+# 배포 빌드는 pages.json이 같은 값을 다시 지정하므로 충돌 없음.
+theme = 'template'
 
 enableRobotsTXT = true
 
