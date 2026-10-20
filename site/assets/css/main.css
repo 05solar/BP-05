@@ -463,6 +463,33 @@ body[data-theme="dark"] .morandi-nav {
   margin-bottom: 1.1rem;
 }
 
+/* 프로젝트 카드 전체를 첫 링크(GitHub)로 연결하는 오버레이.
+   footer의 개별 칩 링크는 z-index로 위에 두어 그대로 동작한다. */
+.card-stretched-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.card-stretched-link:focus-visible {
+  outline: 3px solid var(--color-highlight);
+  outline-offset: -3px;
+}
+
+.expandable-card:has(.card-stretched-link) {
+  cursor: pointer;
+}
+
+.expandable-card:has(.card-stretched-link:hover) {
+  transform: translateY(-2px);
+}
+
+.expandable-card .card-footer {
+  position: relative;
+  z-index: 2;
+}
+
 .news-item {
   background: var(--color-surface);
   border-radius: 12px;
