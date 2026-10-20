@@ -1,5 +1,5 @@
 writing:
-  - name: "Notes"
-    description: "In-progress syntheses of papers & methods."
-    image: "/images/ZenBrushstroke.png"
-    url: "/writing/"
+  - name: "CheckMite 개발 기록"
+    description: "캡스톤 대상 수상작 — YOLO 기반 응애 분석 시스템의 목적·역할·과정·결과 회고."
+    image: "/images/projects/checkmitev1.png"
+    url: "/writing/checkmite/"
