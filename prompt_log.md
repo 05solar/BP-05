@@ -66,3 +66,8 @@
 - **프롬프트**: `C:\Users\이솔하\Desktop\PF 여기에 있는 내용 중에서 자기 소개 부분만 가져와서 교체한 후에 commit 하고 push 해줘`
 - **응답/작업 요약**: PF(React/Vite 포트폴리오)의 `src/components/Hero.tsx`와 `src/data/site.ts`에서 자기소개 부분을 추출 — 이름(이솔하/leeosolha), 태그라인(풀스택 개발자), 전북대 IT지능정보공학과 재학, 풀스택 웹 개발·AI 활용 관심, LLM·RAG·MCP 기반 AI 서비스 개발 경험, GitHub(05solar)·LinkedIn 링크, 이메일. 이를 `data/profile.yaml`(이름·요약·소속·관심 목록·링크)과 `hugo.toml` params(description·email·location)에 반영해 테마 데모 인물(Dr. Celadon)을 교체함. 로컬 빌드 후 홈 HTML에 '이솔하' 4회 등장, 'Dr. Celadon'·'alex@example'·'Tampa' 0회 확인.
 - **산출물**: `data/profile.yaml` 교체, `hugo.toml` params 수정, 커밋·push
+
+## 11. (2026-10-20) 로컬 실행 오류 해결 안내
+- **프롬프트**: 로컬 확인 명령 질문 후 `npm run dev` ENOENT 오류와 `hugo` 명령 인식 불가 오류 공유
+- **응답/작업 요약**: (1) BP-05는 Hugo 사이트라 npm/package.json이 없는 것이 정상이며 `hugo server`로 실행해야 함을 안내. (2) `hugo` 미인식 원인은 winget 설치 이전에 열린 PowerShell 창의 PATH 미갱신 — 새 터미널을 열거나 `$env:Path` 갱신 후 실행하도록 안내. 접속 주소는 http://localhost:1313/BP-05/. (3) npm 실행 시도가 만든 불필요한 `package-lock.json`(84B)을 삭제해 작업 트리를 깨끗하게 유지함 (P55).
+- **산출물**: `package-lock.json` 삭제, 로컬 실행 방법 안내
