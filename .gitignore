@@ -2,10 +2,23 @@
 agent.md
 prompt_log.md
 
-# Hugo 빌드 산출물
-public/
-resources/
+# Ignore the generated site
+exampleSite/public/
+exampleSite/resources/
 
-# 시스템·도구 임시 파일
+# Ignore system files
 .DS_Store
 .hugo_build.lock
+
+# Prepared Hugo Pages site
+!/site/
+!/site/**
+!/.github/
+!/.github/**
+!/.github-pages.json
+/public/
+/.pages-tools/
+**/node_modules/
+**/resources/_gen/
+**/.hugo_build.lock
+/.github-pages-setup-backups/
