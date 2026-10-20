@@ -1,4 +1,10 @@
 items:
+  # 경력 사항 (맨 위 고정 — 첫 항목 아래 간격은 CSS .news-item:first-child 로 조절)
+  - date: "2026.07 ~ 2026.08"
+    detail: "💼 **(주)헤드아이티** ==인턴== — GPU 서버 기반 RAG 서비스 환경 구축"
+    badges: ["Experience", "인턴"]
+
+  # 수상 내역
   - date: "2026"
     detail: "🥇 **2026 오픈소스 SW 해커톤** ==대상== (총장상) — 전북대학교 SW중심사업단"
     badges: ["Award", "대상"]

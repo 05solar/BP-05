@@ -458,6 +458,11 @@ body[data-theme="dark"] .morandi-nav {
   gap: 0.6rem;
 }
 
+/* 첫 항목(경력 사항)과 아래 수상 내역 사이 간격을 벌린다 */
+.news-item:first-child {
+  margin-bottom: 1.1rem;
+}
+
 .news-item {
   background: var(--color-surface);
   border-radius: 12px;
