@@ -61,3 +61,8 @@
 - **프롬프트**: `일단 커밋하고 push 해봐 lotus05f@gmail.com 단독계정으로만 진행해`
 - **응답/작업 요약**: 작업 트리가 깨끗한 상태(미커밋 변경 없음)였고, 기존 커밋 6개 모두 `05solar <lotus05f@gmail.com>` 단독 계정으로 작성되어 origin/main에 push 완료된 것을 확인함. 이 확인 기록을 추가로 커밋·push함.
 - **산출물**: 커밋 작성자 검증, prompt_log 갱신 커밋 push
+
+## 10. (2026-10-20) PF 포트폴리오의 자기소개로 교체
+- **프롬프트**: `C:\Users\이솔하\Desktop\PF 여기에 있는 내용 중에서 자기 소개 부분만 가져와서 교체한 후에 commit 하고 push 해줘`
+- **응답/작업 요약**: PF(React/Vite 포트폴리오)의 `src/components/Hero.tsx`와 `src/data/site.ts`에서 자기소개 부분을 추출 — 이름(이솔하/leeosolha), 태그라인(풀스택 개발자), 전북대 IT지능정보공학과 재학, 풀스택 웹 개발·AI 활용 관심, LLM·RAG·MCP 기반 AI 서비스 개발 경험, GitHub(05solar)·LinkedIn 링크, 이메일. 이를 `data/profile.yaml`(이름·요약·소속·관심 목록·링크)과 `hugo.toml` params(description·email·location)에 반영해 테마 데모 인물(Dr. Celadon)을 교체함. 로컬 빌드 후 홈 HTML에 '이솔하' 4회 등장, 'Dr. Celadon'·'alex@example'·'Tampa' 0회 확인.
+- **산출물**: `data/profile.yaml` 교체, `hugo.toml` params 수정, 커밋·push
