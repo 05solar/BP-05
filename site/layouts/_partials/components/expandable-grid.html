@@ -58,8 +58,13 @@
         {{ with index .links 0 }}
           {{ $dest := or .link .url }}
           {{ if $dest }}
-            <a class="card-stretched-link" href="{{ $dest | safeURL }}" target="_blank" rel="noopener"
-               aria-label="{{ $card.title }} {{ .label }} 새 탭에서 열기"></a>
+            {{ if and (hasPrefix $dest "/") (not (hasPrefix $dest "//")) }}
+              <a class="card-stretched-link" href="{{ $dest | relURL }}"
+                 aria-label="{{ $card.title }} {{ .label }} 열기"></a>
+            {{ else }}
+              <a class="card-stretched-link" href="{{ $dest | safeURL }}" target="_blank" rel="noopener"
+                 aria-label="{{ $card.title }} {{ .label }} 새 탭에서 열기"></a>
+            {{ end }}
           {{ end }}
         {{ end }}
       </article>

@@ -19,7 +19,10 @@ papers:
     summary: "교육청 직원이 단기 교육에서 만든 프로그램을 내부 저장소에 올리면, 표준 규격만 지키면 자동으로 하나의 MSA 서비스로 띄워 바로 쓸 수 있게 하는 사내 포털입니다. React·Spring Boot 3·MariaDB·Kubernetes로 구성한 단독 프로젝트입니다."
     image: "/images/projects/edu-msa.png"
     tags: ["MSA", "Kubernetes", "JWT"]
-    links: []
+    # 프라이빗 저장소 — GitHub 대신 사이트 내 개발 기록으로 연결
+    links:
+      - label: "개발 기록"
+        url: "/writing/edu-msa/"
 
   # --- Hidden initially ---
 
