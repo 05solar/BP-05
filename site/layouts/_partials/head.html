@@ -3,6 +3,19 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ with site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 
+{{ $ogTitle := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
+{{ $ogDesc := default site.Params.description .Summary }}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ $ogTitle }}">
+<meta property="og:description" content="{{ $ogDesc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ default "images/profile-avatar.png" .Params.image | absURL }}">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $ogTitle }}">
+<meta name="twitter:description" content="{{ $ogDesc }}">
+
 <meta name="theme-color" content="#7DA2A9" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1C1C1E" media="(prefers-color-scheme: dark)">
 
