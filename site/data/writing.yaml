@@ -1,5 +1,10 @@
 writing:
   - name: "CheckMite 개발 기록"
-    description: "캡스톤 대상 수상작 — YOLO 기반 응애 분석 시스템의 목적·역할·과정·결과 회고."
+    description: "캡스톤 대상 수상작 — YOLO 기반 응애 분석 시스템의 설계·구현·평가를 논문 형식으로 정리."
     image: "/images/projects/checkmitev1.png"
     url: "/writing/checkmite/"
+
+  - name: "edu-msa 개발 기록"
+    description: "코드를 올리면 자동으로 MSA 서비스가 되는 사내 포털 — 단독 개발 진행기."
+    image: "/images/projects/edu-msa.png"
+    url: "/writing/edu-msa/"
