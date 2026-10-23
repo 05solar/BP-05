@@ -11,6 +11,12 @@ summary: >
   문제를 해결하는 힘==을 경험한 뒤로 AI 활용 기술을 함께 공부하고 있습니다.
   LLM, RAG, MCP(Model Context Protocol) 기반 AI 서비스 개발 경험을 보유하고 있으며,
   프론트엔드부터 백엔드, AI 시스템 연동까지 전반적인 개발 역량을 갖추고 있습니다.
+
+
+  **앞으로의 학습 목표**는 다중 객체 추적(MOT) 알고리즘을 체계적으로 공부하는 것입니다.
+  현재 진행한 CheckMite의 추적이 단순 IoU·거리 기반이라 개체 겹침에 취약하다는 한계를 확인했기 때문에,
+  다음 단계로 ==ByteTrack 논문과 공개 구현을 학습==해 CheckMite의 추적 모듈에 적용하고
+  기존 방식과의 성능 비교 실험을 진행할 계획입니다.
 affiliation: "전북대학교 IT지능정보공학과 재학"
 profile_image: "images/profile-avatar.png"
 profile_layout: "classic" # Options: "modern" or "classic"
