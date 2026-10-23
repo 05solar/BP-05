@@ -8,3 +8,8 @@ writing:
     description: "코드를 올리면 자동으로 MSA 서비스가 되는 사내 포털 — 단독 개발 진행기."
     image: "/images/projects/edu-msa.png"
     url: "/writing/edu-msa/"
+
+  - name: "JBIG 개발 기록"
+    description: "해커톤 대상 수상작 — 공식 문서만 근거로 답하는 다국어 RAG 상담 플랫폼."
+    image: "/images/projects/jbig.png"
+    url: "/writing/jbig/"
