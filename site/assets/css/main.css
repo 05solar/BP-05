@@ -458,6 +458,31 @@ body[data-theme="dark"] .morandi-nav {
   gap: 0.6rem;
 }
 
+/* 키보드 사용자용 본문 건너뛰기 링크 — 포커스 시에만 표시 */
+.skip-link {
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+  z-index: 100;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0 0 10px 10px;
+  background: var(--color-highlight);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus-visible {
+  top: 0;
+  outline: 3px solid var(--color-text);
+}
+
+#main-content:focus {
+  outline: none;
+}
+
 /* 첫 항목(경력 사항)과 아래 수상 내역 사이 간격을 벌린다 */
 .news-item:first-child {
   margin-bottom: 1.1rem;
