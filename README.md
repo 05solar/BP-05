@@ -72,6 +72,21 @@ hugo server
 
 GitHub Pages 설정: Settings → Pages → Build and deployment → Source = **GitHub Actions**
 
+## 테마 대비 주요 변경 사항
+
+테마 원본은 `site/themes/template/`에 보존하고, 모든 수정은 Hugo 오버라이드 규칙(사이트 레벨 우선)으로 적용했습니다.
+
+| 변경 | 방식 | 파일 |
+|------|------|------|
+| 전역 글꼴을 Pretendard로 교체 | CSS 오버라이드 (@font-face + 폰트 스택 12곳) | `site/assets/css/main.css` |
+| 미사용 Google Fonts(Inter·Merriweather) 요청 제거 | head 파셜 오버라이드 | `site/layouts/_partials/head.html` |
+| Open Graph·Twitter 카드 메타 추가 | head 파셜 오버라이드 | `site/layouts/_partials/head.html` |
+| 프로젝트 카드 전체 클릭 → GitHub 새 탭 | 파셜 오버라이드 + 오버레이 링크 CSS | `site/layouts/_partials/components/expandable-grid.html` |
+| 본문 건너뛰기(skip link) 접근성 링크 | baseof 오버라이드 + CSS | `site/layouts/_default/baseof.html` |
+| 404 오류 페이지 | 레이아웃 추가 | `site/layouts/404.html` |
+| News 첫 항목(경력)과 수상 내역 간 간격 | CSS 추가 | `site/assets/css/main.css` |
+| 파비콘·앱 아이콘·웹 매니페스트 개인화 | 정적 파일 오버라이드 | `site/static/favicon*`, `site.webmanifest` |
+
 ## 출처와 라이선스
 
 - 테마: [Celadon](https://github.com/Yajie-Xu/hugo-celadon) by Yajie Xu — MIT License ([LICENSE.txt](LICENSE.txt), 원본 안내는 [site/themes/template/README.md](site/themes/template/README.md))
