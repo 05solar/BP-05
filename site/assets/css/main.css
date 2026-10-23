@@ -812,6 +812,7 @@ body[data-theme="dark"] .tag {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 0.9rem;
+  color: #000;
 }
 
 .category-card p {
