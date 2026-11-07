@@ -458,12 +458,28 @@ body[data-theme="dark"] .morandi-nav {
   gap: 0.6rem;
 }
 
-/* 본문 마크다운 표: 좁은 화면에서 레이아웃을 깨지 않도록 표 영역 내 가로 스크롤 처리 */
-.article-content table {
-  display: block;
+/* 본문 마크다운 표: 좁은 화면에서 레이아웃을 깨지 않도록 표를 감싼 wrapper에서 가로 스크롤 처리.
+   (table 자체에 overflow-x:auto를 걸면 하위 tr/td가 wrapper 밖으로 새어나가 페이지 전체가
+   가로로 넘치는 문제가 있어 render hook으로 wrapper div를 추가함 — layouts/_default/_markup/render-table.html) */
+.article-content .table-scroll {
   max-width: 100%;
   overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.article-content table {
   border-collapse: collapse;
+  width: max-content;
+  min-width: 100%;
+}
+
+/* KaTeX 블록 수식($$...$$): 벤더 katex.min.css에 overflow 규칙이 없어 좁은 화면에서
+   페이지 전체가 가로로 넘치는 원인이었음 — 수식 영역 자체에 가로 스크롤 적용 */
+.article-content .katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.25rem;
 }
 
 /* 키보드 사용자용 본문 건너뛰기 링크 — 포커스 시에만 표시 */
